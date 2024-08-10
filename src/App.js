@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 const item = {
@@ -10,23 +10,31 @@ const item = {
   currency: '£'
 }
 
-function App() {
+function ShopItemFunc() {
   return (
-    <div class="main-content">
+    <div className="container">
+    <div className="background-element">
+    </div>
+    <div className="highlight-window">
+      <div className='highlight-overlay'></div>
+    </div>
+    <div className="window">
+    <div className="main-content">
     <h2>{item.brand}</h2>
     <h1>{item.title}</h1>
     <h3>{item.description}</h3>
-    <div class="description">
+    <div className="description">
     {item.descriptionFull}
     </div>
-    <div class="highlight-window mobile"><div class="highlight-overlay"></div></div>
-    <div class="divider"></div>
-    <div class="purchase-info">
-      <div class="price">{item.currency}{item.price}.00</div>
+    <div className="divider"></div>
+    <div className="purchase-info">
+      <div className="price">{item.currency}{item.price}.00</div>
       <button>Добавить в корзину</button>
     </div>
   </div>
+    </div>
+  </div>  
   );
 }
 
-export default App;
+export default ShopItemFunc;
