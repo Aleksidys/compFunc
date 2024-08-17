@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import ShopItemFunc from './App';
+import ShopItemFunc from './ShopItemFunc';
 
 test('renders learn react link', () => {
   render(<ShopItemFunc />);
